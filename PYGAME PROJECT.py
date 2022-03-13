@@ -43,7 +43,6 @@ class Player(pygame.sprite.Sprite):
         if self.rect.bottom >= SCREEN_HEIGHT:
             self.rect.bottom = SCREEN_HEIGHT
 
-
 class Enemy(pygame.sprite.Sprite):
     def __init__(self):
         super(Enemy, self). __init__()
@@ -63,7 +62,6 @@ class Enemy(pygame.sprite.Sprite):
         if self.rect.right < 0:
             self.kill
 
-
 class Cloud(pygame.sprite.Sprite):
     def __init__(self):
         super(Cloud, self).__init__()
@@ -82,12 +80,8 @@ class Cloud(pygame.sprite.Sprite):
         if self.rect.right < 0:
             self.kill()
 
-
-
-        
-
+#init pygame
 pygame.init()
-
 
 screen = pygame.display.set_mode((SCREEN_WIDTH, SCREEN_HEIGHT))
 
@@ -130,21 +124,3 @@ while running:
         running = False
     pygame.display.flip()
     clock.tick(30)
-
-
-
-    #Game Over meniu
-    #Boss level
-    #Game meniu
-    #Powerups
-    #Machineguns
-    #Enemy planes
-    
-
-
-
-
-
-   
-    
-

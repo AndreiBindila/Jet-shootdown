@@ -5,6 +5,7 @@ from tkinter import CENTER
 from turtle import Screen, bgpic
 import pygame
 import random
+import sys
 
 from pygame.locals import (
     RLEACCEL,
